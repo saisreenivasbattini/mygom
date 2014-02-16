@@ -1,0 +1,40 @@
+<h1>Listing test_reqs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Req type</th>
+      <th>Unit</th>
+      <th>Site</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Notes</th>
+      <th>Current State</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_reqs.each do |test_req| %>
+      <tr>
+        <td><%= test_req.req_type %></td>
+        <td><%= test_req.unit %></td>
+        <td><%= test_req.site %></td>
+        <td><%= test_req.start_date %></td>
+        <td><%= test_req.end_date %></td>
+        <td><%= test_req.notes %></td>
+        <td><%= test_req.current_state %></td>
+        <td><%= link_to 'Show', test_req %></td>
+        <td><%= link_to 'Edit', edit_test_req_path(test_req) %></td>
+        <td><%= link_to 'Destroy', test_req, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Approve', test_req_approve_path(test_req) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test req', new_test_req_path %>

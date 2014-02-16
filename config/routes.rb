@@ -1,4 +1,8 @@
 Mygoms::Application.routes.draw do
+  resources :test_reqs do
+    get 'approve'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

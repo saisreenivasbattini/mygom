@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Req type:</strong>
+  <%= @test_req.req_type %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @test_req.unit %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @test_req.site %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @test_req.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @test_req.end_date %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @test_req.notes %>
+</p>
+
+<%= link_to 'Edit', edit_test_req_path(@test_req) %> |
+<%= link_to 'Back', test_reqs_path %>

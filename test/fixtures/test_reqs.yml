@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  req_type: MyString
+  unit: MyString
+  site: MyString
+  start_date: 2014-02-16
+  end_date: 2014-02-16
+  notes: MyText
+
+two:
+  req_type: MyString
+  unit: MyString
+  site: MyString
+  start_date: 2014-02-16
+  end_date: 2014-02-16
+  notes: MyText
